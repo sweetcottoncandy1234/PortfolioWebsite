@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Portfolio</title>
 	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
@@ -9,7 +10,7 @@
 		/* font-family: 'Lobster Two', cursive; */
 		font-family: Courier New, monospace;
 		color:#FF5C8D;
-		font-size: 100px;
+		font-size: 30px;
 	}
 	body
 	{
@@ -21,36 +22,47 @@
 	{
 		height: 500px;
 	}
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-  	}
-	  a:hover {
-  background-color: rgb(255, 0, 242);
+    a:hover {
+  background-color: rgb(223, 140, 218);
 }
-	@keyframes wobble{
-		0%{ transform: translateY(-1vmin); }
-		50%{ transform: translateY(1vmin); }
-		100%{ transform: translateY(-1vmin); }
-	}
 	</style>
 </head>
 <body>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  </style>
+  </head>
   <body>
   <ul>
 	<li><a href="index.html" style = "color:#F3C5C5">Home</a> <a href="about.html" style = "color:#F3C5C5">About</a> <a href="projects.html" style = "color:#F3C5C5">Projects</a> <a href="involvement.html" style = "color:#F3C5C5">Involvement</a> </li>
   </ul>
-</br>
-</br>
-	<p style="text-align:center;margin-top: 30vmin" id = "maya">Maya Douglas</p>
-	<script>
-		var maya = document.getElementById("maya"); // Reference to element with ID "maya"
-		var m = maya.innerHTML.split(""); //splits string
-		for(var i = 0; i < m.length; i++) // loops through length of split string
-			m[i] = m[i] == " " ? " " : "<span style='animation: wobble 1s " + (i / 10 - 100) + "s infinite; display: inline-block'>" + m[i] + "</span>"; // if there's a space, leave the space alone and don't wrap it in a span. Animation speed is 1s. i/10 makes each letter wobble one second at a time, while -100 means that the computer would have assumed that the animation started already. The wobbling happens infinitely. 
-		maya.innerHTML = m.join(""); //join letters again.
-	</script>
-</body>
+  
+  </body>
+  </html>
+  
+  <img src="https://github.com/sweetcottoncandy1234/Images/blob/master/editedhatmaya.jpg?raw=true" alt="My favorite beanie">    
+   
+<span id = "maya">
+	Hi! My name's Maya. I'm a junior studying computer science and philosophy at the University of Colorado Boulder. 
+<br/>
+    I'm especially passionate about front-end engineering but that's not the only thing I can do! I'm especially comfortable with the usual HTML/CSS/JavaScript bunch, but I'm also used to programming in C++ and Python. I also know how to use SQL. 
+<br/>
+    I speak, read, and write Japanese and English fluently and Chinese competently. 
+<br/>
+    In my free time you'll find me reading a good philosophy book or playing around with code. I also write for a school magazine, and I'm active within my sorority. 
+<br/> 
+    Here are my socials!
+    <ul>
+        <li><a href="https://www.linkedin.com/in/maya-douglas-b45999201/" style = "color:#F3C5C5">LinkedIn</a> <a href="https://www.instagram.com/sweetcottoncandy1234/" style = "color:#F3C5C5">Instagram</a> <a href="https://github.com/sweetcottoncandy1234" style = "color:#F3C5C5">Github</a> </li>
+      </ul>
+</span>
+
 </html>
 
